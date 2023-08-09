@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: vnjr
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-sqtk-tenant/byoc-app-tqhc/vnjr@sha256:8f0d45265d9bec1bd0136dc1b2a371755044b24c1a30ee80d0c3651c64a81d56
         name: my-java-quarkus
         ports:
         - containerPort: 8081
