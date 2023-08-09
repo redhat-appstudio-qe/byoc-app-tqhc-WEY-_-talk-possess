@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: vnjr
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: vnjr
+    app.kubernetes.io/part-of: byoc-app-tqhc
+  name: vnjr6mzv
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: vnjr
+    weight: null
+status: {}
